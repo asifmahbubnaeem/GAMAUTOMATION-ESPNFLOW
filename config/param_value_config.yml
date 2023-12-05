@@ -1,0 +1,37 @@
+params:
+  url:
+    deleteType: ptpl, dph, chtag, location, bettingid, nofb
+    addType: vad_type, pp, tfcd, cmsid, vid, ssss, min_ad_duration
+    editType: iu, output, description_url, cust_params
+    keepType: path, ss_req, env, gdfp_req, unviewed_position_start, impl, sz, ad_rule, correlator, ppid, url, scor, mridx, pod, npa, is_lat, rdid, idtype, ip, vpos, pmnd, pmxd, pmad, user_agent, msid, an
+  cust:
+    deleteType: userType
+    addType: series, sp, chan, authp, plt, vps, adPod, ppid, refDomain, distAssetId, bundleId, isDnt
+    editType: vdm,excl_cat
+    keepType: linearProvider, metadata_sport, dph, sportSeriesName, metadata_sport, metadata_live, device_os, device_type, metadata_assetId, metadata_contenttype, metadata_state, metadata_suburb, metadata_title, metadata_woId
+  cust_values:
+    vdm: live
+    excl_cat: gambling,odds
+    series: <<cust_params.sportSeriesName>>
+    sp: <<cust_params.metadata_sport>>
+    chan: foxtel
+    authp: foxtel
+    plt: <<cust_params.device_type>>
+    vps: <<sz>>
+    adPod: <<pod>>
+    ppid: <<ppid>>
+    refDomain: kayo.com.au
+    distAssetId: <<cust_params.metadata_assetId>>
+    bundleId: <<msid>>
+    isDnt: <<npa>>
+  url_values:
+    iu: /21783347309/espn.au/kayo/<<device_type>>
+    output: xml_vast3
+    description_url: http://www.espn.com/video
+    vad_type: linear
+    pp: kayo-app
+    tfcd: 0
+    cmsid: 2497009
+    vid: espnvod_default_asset
+    ssss: mediatailor
+    min_ad_duration: 1
