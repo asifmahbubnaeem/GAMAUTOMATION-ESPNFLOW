@@ -1,0 +1,279 @@
+Test_Case_Name,url_params_in_Request, cust_params_in_Request,expected_url_param_in_output, expected_cust_param_in_output
+editUrl-iu-&-device_type-excluded,,linearProvider%3Despn1,iu=/21783347309/espn.au/kayo/,,
+editUrl-iu-excluded-device_type-val-ios,,linearProvider%3Despn1 device_type%3Dios,iu=/21783347309/espn.au/kayo/ios,,
+editUrl-iu-excluded-device_type_empty,,linearProvider%3Despn1 device_type%3D,iu=/21783347309/espn.au/kayo/,,
+editUrl-iu-rand_val-device_type_excluded,iu=rand_val,linearProvider%3Despn1,iu=/21783347309/espn.au/kayo/,,
+editUrl-iu-rand_val-device_type_empty,iu=rand_val,linearProvider%3Despn1 device_type%3D,iu=/21783347309/espn.au/kayo/,,
+editUrl-iu-rand_val-device_type_val_mac,iu=rand_val,linearProvider%3Despn1 device_type%3Dmac,iu=/21783347309/espn.au/kayo/mac,,
+editUrl-output-excluded,,linearProvider%3Despn2,output=xml_vast3,,
+editUrl-output-rand_val,output=rand_val,linearProvider%3Despn2,output=xml_vast3,,
+editUrl-output-empty,output=,linearProvider%3Despn2,output=xml_vast3,,
+editUrl-description_url-excluded,,linearProvider%3Despn2,description_url=http://www.espn.com/video,,
+editUrl-description_url-empty,description_url=,linearProvider%3Despn2,description_url=http://www.espn.com/video,,
+editUrl-description_url-value,description_url=rand_val,linearProvider%3Despn2,description_url=http://www.espn.com/video,,
+editUrl-description_url-value,description_url=http://www.espn.com/video,linearProvider%3Despn2,description_url=http://www.espn.com/video,,
+editcust-excl_cat-empty,,linearProvider%3Despn2 excl-cat%3D,,excl_cat%3Dgambling%2Codds,
+editcust-excl_cat-excluded,,linearProvider%3Despn2,,excl_cat%3Dgambling%2Codds,
+editcust-excl_cat-rand_val,,linearProvider%3Despn2 excl-cat%3Drand_val,,excl_cat%3Dgambling%2Codds,
+editcust-vdm-excluded,,linearProvider%3Despn2,,vdm%3Dlive,
+editUrl-vdm-empty,,linearProvider%3Despn2 vdm%3D,,vdm%3Dlive,
+editUrl-vdm-value,,linearProvider%3Despn2 vdm%3Drand_val,,vdm%3Dlive,
+editUrl-vdm-cap-value,,linearProvider%3Despn2 vdm%3DLIVE,,vdm%3Dlive,
+editUrl-vdm-cap-key-value,,linearProvider%3Despn2 VDM%3DLIVE,,vdm%3Dlive VDM%3DLIVE,
+keepUrl-path-value,path=keepPath, linearProvider=espn1, path=keepPath,linearProvider%3Despn1,
+keepUrl-path-capital-value,path=RAND_VAL,linearProvider=espn1, path=RAND_VAL,linearProvider%3Despn1,
+keepUrl-path-numeric-value,path=89123402,linearProvider=espn1, path=89123402,linearProvider%3Despn1,
+keepUrl-path-excluded,,linearProvider=espn1,<EXCLUDE>path,linearProvider%3Despn1,
+keepUrl-path-Empty,path=,linearProvider=espn1,path=,linearProvider%3Despn1,
+keepUrl-ss_req-value,ss_req=keepss_req,linearProvider=espn2,ss_req=keepss_req,linearProvider%3Despn2, 
+keepUrl-ss_req-capital-value,ss_req=RAND_VAL,linearProvider=espn2,ss_req=RAND_VAL,linearProvider%3Despn2, 
+keepUrl-ss_req-numeric,ss_req=111990,linearProvider=espn2,ss_req=111990,linearProvider%3Despn2, 
+keepUrl-ss_req-excluded,,linearProvider=espn2,<EXCLUDE>ss_req,linearProvider%3Despn2, 
+keepUrl-ss_req-empty,ss_req=,linearProvider=espn2,ss_req=,linearProvider%3Despn2, 
+keepUrl-env-value,env=keepenv,linearProvider=espn1, env=keepenv,linearProvider%3Despn1
+keepUrl-env-capital-value,env=RAND_VAL,linearProvider=espn1, env=RAND_VAL,linearProvider%3Despn1
+keepUrl-env-numeric-value,env=1119990,linearProvider=espn1, env=1119990,linearProvider%3Despn1
+keepUrl-env-exclude,,linearProvider=espn1,<EXCLUDE>env,linearProvider%3Despn1
+keepUrl-env-empty,env=,linearProvider=espn1,env=,linearProvider%3Despn1
+keepUrl-gdfp_req-value,gdfp_req=keepgdfp_req,linearProvider=ESPN2, gdfp_req=keepgdfp_req,linearProvider%3DESPN2
+keepUrl-gdfp_req-capital-value,gdfp_req=KEEPGDFP_REQ,linearProvider=ESPN2,gdfp_req=KEEPGDFP_REQ,linearProvider%3DESPN2
+keepUrl-gdfp_req-numeric-value,gdfp_req=1119990,linearProvider=ESPN2,gdfp_req=1119990,linearProvider%3DESPN2
+keepUrl-gdfp_req-excluded,,linearProvider=ESPN2,<EXCLUDE>gdfp_req,linearProvider%3DESPN2
+keepUrl-gdfp_req-empty,gdfp_req=,linearProvider=ESPN2,gdfp_req=,linearProvider%3DESPN2
+keepUrl-unviewed_position_start-value,unviewed_position_start=keepunviewed_position_start,linearProvider=ESPN2, unviewed_position_start=keepunviewed_position_start,, 
+keepUrl-unviewed_position_start-capital-value,unviewed_position_start=RAND_VAL,linearProvider=ESPN2, unviewed_position_start=RAND_VAL,, 
+keepUrl-unviewed_position_start-numeric-value,unviewed_position_start=123789,linearProvider=ESPN2, unviewed_position_start=123789,, 
+keepUrl-unviewed_position_start-numeric-empty,unviewed_position_start=,linearProvider=ESPN2, unviewed_position_start=,, 
+keepUrl-unviewed_position_start-numeric-excluded,,linearProvider=ESPN2,<EXCLUDE>unviewed_position_start=,, 
+keepUrl-impl-value,impl=keepimpl,linearProvider=ESPN2, impl=keepimpl,,
+keepUrl-impl-capital-value,impl=RAND_VAL,linearProvider=ESPN2,impl=RAND_VAL,,
+keepUrl-impl-numeric-value,impl=123456,linearProvider=ESPN2,impl=123456,,
+keepUrl-impl-empty-value,impl=,linearProvider=ESPN2,impl=,,
+keepUrl-impl-empty-value,,linearProvider=ESPN2,<EXCLUDE>impl,,
+keepUrl-sz-value,sz=keepsz,linearProvider=ESPN2, sz=keepsz,,
+keepUrl-sz-capital-value,sz=RAND_VAL,linearProvider=ESPN2, sz=RAND_VAL,,
+keepUrl-sz-numeric,sz=40x60,linearProvider=ESPN2, sz=40x60,,
+keepUrl-sz-empty,sz=,linearProvider=ESPN2, sz=,,
+keepUrl-sz-excluded,,linearProvider=ESPN2,<EXCLUDE>sz,,
+keepUrl-ad_rule-value,ad_rule=Testad_rule,linearProvider=ESPN1, ad_rule=Testad_rule,,
+keepUrl-ad_rule-cap-value,ad_rule=RAND_VAL,linearProvider=ESPN1, ad_rule=RAND_VAL,,
+keepUrl-ad_rule-numeric-value,ad_rule=111990,linearProvider=ESPN1, ad_rule=111990,,
+keepUrl-ad_rule-empty-value,ad_rule=,linearProvider=ESPN1, ad_rule=,,
+keepUrl-ad_rule-excluded,,linearProvider=ESPN1,<EXCLUDE>ad_rule,,
+keepUrl-correlator-value,correlator=Rand_correlator,linearProvider=ESPN2, correlator=Rand_correlator,,
+keepUrl-correlator-cap-value,correlator=RAND_VAL,linearProvider=ESPN2, correlator=RAND_VAL,,
+keepUrl-correlator-num-value,correlator=111990,linearProvider=ESPN2, correlator=111990,,
+keepUrl-correlator-empty-value,correlator=,linearProvider=ESPN2, correlator=,,
+keepUrl-correlator-excluded,,linearProvider=ESPN2,<EXCLUDE>correlator,,
+keepUrl-ppid-value,ppid=testppid,linearProvider=ESPN1, ppid=testppid,,
+keepUrl-ppid-cap-value,ppid=RAND_VAL,linearProvider=ESPN1, ppid=RAND_VAL,,
+keepUrl-ppid-num-value,ppid=123456,linearProvider=ESPN1, ppid=123456,,
+keepUrl-ppid-empty-value,ppid=,linearProvider=ESPN1, ppid=,,
+keepUrl-ppid-excluded,,linearProvider=ESPN1,<EXCLUDE>ppid,,
+keepUrl-url-value,url=https://baytal.com,linearProvider=ESPN2, url=https://baytal.com,,
+keepUrl-url-cap-value,url=HTTPS://BAYTAL.COM,linearProvider=ESPN2, url=HTTPS://BAYTAL.COM,,
+keepUrl-url-num-value,url=123456,linearProvider=ESPN2, url=123456,,
+keepUrl-url-empty-value,url=,linearProvider=ESPN2, url=,,
+keepUrl-url-excluded,,linearProvider=ESPN2,<EXCLUDE>url,,
+keepUrl-scor-value,scor=randScorText,linearProvider=ESPN2, scor=randScorText,,
+keepUrl-scor-cap-value,scor=RAND_VAL,linearProvider=ESPN2, scor=RAND_VAL,,
+keepUrl-scor-num-value,scor=1119990,linearProvider=ESPN2, scor=1119990,,
+keepUrl-scor-empty-value,scor=,linearProvider=ESPN2, scor=,,
+keepUrl-scor-excluded,,linearProvider=ESPN2,<EXCLUDE>scor,,
+keepUrl-mridx-value,mridx=randText,linearProvider=ESPN1, mridx=randText,,
+keepUrl-mridx-cap-value,mridx=RAND_VAL,linearProvider=ESPN1, mridx=RAND_VAL,,
+keepUrl-mridx-num-value,mridx=123456,linearProvider=ESPN1, mridx=123456,,
+keepUrl-mridx-empty-value,mridx=,linearProvider=ESPN1, mridx=,,
+keepUrl-mridx-excluded,,linearProvider=ESPN1,<EXCLUDE>mridx,,
+keepUrl-pod-value,pod=randText,linearProvider=ESPN1, pod=randText,,
+keepUrl-pod-cap-value,pod=RAND_VAL,linearProvider=ESPN1, pod=RAND_VAL,,
+keepUrl-pod-num-value,pod=123456,linearProvider=ESPN1, pod=123456,,
+keepUrl-pod-empty-value,pod=,linearProvider=ESPN1, pod=,,
+keepUrl-pod-excluded,,linearProvider=ESPN1,<EXCLUDE>pod,,
+keepUrl-npa-value,npa=randText,linearProvider=ESPN1, npa=randText,,
+keepUrl-npa-cap-value,npa=RAND_VAL,linearProvider=ESPN1, npa=RAND_VAL,,
+keepUrl-npa-num-value,npa=123456,linearProvider=ESPN1, npa=123456,,
+keepUrl-npa-empty-value,npa=,linearProvider=ESPN1, npa=,,
+keepUrl-npa-excluded,,linearProvider=ESPN1,<EXCLUDE>npa,,
+keepUrl-is_lat-value,is_lat=randText,linearProvider=ESPN1, is_lat=randText,,
+keepUrl-is_lat-cap-value,is_lat=RAND_VAL,linearProvider=ESPN1, is_lat=RAND_VAL,,
+keepUrl-is_lat-num-value,is_lat=123456,linearProvider=ESPN1, is_lat=123456,,
+keepUrl-is_lat-empty-value,is_lat=,linearProvider=ESPN1, is_lat=,,
+keepUrl-is_lat-excluded,,linearProvider=ESPN1,<EXCLUDE>is_lat,,
+keepUrl-rdid-value,rdid=randText,linearProvider=ESPN1, rdid=randText,,
+keepUrl-rdid-cap-value,rdid=RAND_VAL,linearProvider=ESPN1, rdid=RAND_VAL,,
+keepUrl-rdid-num-value,rdid=123456,linearProvider=ESPN1, rdid=123456,,
+keepUrl-rdid-empty-value,rdid=,linearProvider=ESPN1, rdid=,,
+keepUrl-rdid-excluded,,linearProvider=ESPN1,<EXCLUDE>rdid,,
+keepUrl-idtype-value,idtype=randText,linearProvider=ESPN1, idtype=randText,,
+keepUrl-idtype-cap-value,idtype=RAND_VAL,linearProvider=ESPN1, idtype=RAND_VAL,,
+keepUrl-idtype-num-value,idtype=123456,linearProvider=ESPN1, idtype=123456,,
+keepUrl-idtype-empty-value,idtype=,linearProvider=ESPN1, idtype=,,
+keepUrl-idtype-excluded,,linearProvider=ESPN1,<EXCLUDE>idtype,,
+keepUrl-ip-value,ip=randText,linearProvider=ESPN1, ip=randText,,
+keepUrl-ip-cap-value,ip=RAND_VAL,linearProvider=ESPN1, ip=RAND_VAL,,
+keepUrl-ip-num-value,ip=192.168.128.90,linearProvider=ESPN1, ip=192.168.128.90,,
+keepUrl-ip-empty-value,ip=,linearProvider=ESPN1, ip=,,
+keepUrl-ip-excluded,,linearProvider=ESPN1,<EXCLUDE>ip,,
+keepUrl-vpos-value,vpos=randText,linearProvider=ESPN1, vpos=randText,,
+keepUrl-vpos-cap-value,vpos=RAND_VAL,linearProvider=ESPN1, vpos=RAND_VAL,,
+keepUrl-vpos-num-value,vpos=111990,linearProvider=ESPN1, vpos=111990,,
+keepUrl-vpos-empty-value,vpos=,linearProvider=ESPN1, vpos=,,
+keepUrl-vpos-excluded,,linearProvider=ESPN1,<EXCLUDE>vpos,,
+keepUrl-pmnd-value,pmnd=randText,linearProvider=ESPN1, pmnd=randText,,
+keepUrl-pmnd-cap-value,pmnd=RAND_VAL,linearProvider=ESPN1, pmnd=RAND_VAL,,
+keepUrl-pmnd-num-value,pmnd=111990,linearProvider=ESPN1, pmnd=111990,,
+keepUrl-pmnd-empty-value,pmnd=,linearProvider=ESPN1, pmnd=,,
+keepUrl-pmnd-excluded,,linearProvider=ESPN1,<EXCLUDE>pmnd,,
+keepUrl-pmxd-value,pmxd=randText,linearProvider=ESPN1, pmxd=randText,,
+keepUrl-pmxd-cap-value,pmxd=RAND_VAL,linearProvider=ESPN1, pmxd=RAND_VAL,,
+keepUrl-pmxd-num-value,pmxd=111990,linearProvider=ESPN1, pmxd=111990,,
+keepUrl-pmxd-empty-value,pmxd=,linearProvider=ESPN1, pmxd=,,
+keepUrl-pmxd-excluded,,linearProvider=ESPN1,<EXCLUDE>pmxd,,
+keepUrl-pmad-value,pmad=randText,linearProvider=ESPN1, pmad=randText,,
+keepUrl-pmad-cap-value,pmad=RAND_VAL,linearProvider=ESPN1, pmad=RAND_VAL,,
+keepUrl-pmad-num-value,pmad=111990,linearProvider=ESPN1, pmad=111990,,
+keepUrl-pmad-empty-value,pmad=,linearProvider=ESPN1, pmad=,,
+keepUrl-pmad-excluded,,linearProvider=ESPN1,<EXCLUDE>pmad,,
+keepUrl-user_agent-value,user_agent=randText,linearProvider=ESPN1, user_agent=randText,,
+keepUrl-user_agent-cap-value,user_agent=RAND_VAL,linearProvider=ESPN1, user_agent=RAND_VAL,,
+keepUrl-user_agent-num-value,user_agent=111990,linearProvider=ESPN1, user_agent=111990,,
+keepUrl-user_agent-empty-value,user_agent=,linearProvider=ESPN1, user_agent=,,
+keepUrl-user_agent-excluded,,linearProvider=ESPN1,<EXCLUDE>user_agent,,
+keepUrl-msid-value,msid=randText,linearProvider=ESPN1, msid=randText,,
+keepUrl-msid-cap-value,msid=RAND_VAL,linearProvider=ESPN1, msid=RAND_VAL,,
+keepUrl-msid-num-value,msid=111990,linearProvider=ESPN1, msid=111990,,
+keepUrl-msid-empty-value,msid=,linearProvider=ESPN1, msid=,,
+keepUrl-msid-excluded,,linearProvider=ESPN1,<EXCLUDE>msid,,
+keepUrl-an-value,an=randText,linearProvider=ESPN1, an=randText,,
+keepUrl-an-cap-value,an=RAND_VAL,linearProvider=ESPN1, an=RAND_VAL,,
+keepUrl-an-num-value,an=111990,linearProvider=ESPN1, an=111990,,
+keepUrl-an-empty-value,an=,linearProvider=ESPN1, an=,,
+keepUrl-an-excluded,,linearProvider=ESPN1,<EXCLUDE>an,,
+keepCust-linearProvider,,linearProvider%3DESPN1,,linearProvider%3DESPN1
+keepCust-metadata_sport-value,,linearProvider%3DESPN2 metadata_sport%3Dfootball,,linearProvider%3DESPN2 metadata_sport%3Dfootball
+keepCust-metadata_sport-cap-value,,linearProvider%3DESPN2 metadata_sport%3DFOOTBALL,,linearProvider%3DESPN2 metadata_sport%3DFOOTBALL
+keepCust-metadata_sport-num-value,,linearProvider%3DESPN2 metadata_sport%3D123456,,linearProvider%3DESPN2 metadata_sport%3D123456
+keepCust-metadata_sport-empty-value,,linearProvider%3DESPN2 metadata_sport%3D,,linearProvider%3DESPN2 metadata_sport%3D
+keepCust-metadata_sport-excluded,,linearProvider%3DESPN2,,linearProvider%3DESPN2 <EXCLUDE>metadata_sport
+keepCust-dph-value,,linearProvider%3DESPN2 dph%3Dfootball,,linearProvider%3DESPN2 dph%3Dfootball
+keepCust-dph-cap-value,,linearProvider%3DESPN2 dph%3DFOOTBALL,,linearProvider%3DESPN2 dph%3DFOOTBALL
+keepCust-dph-num-value,,linearProvider%3DESPN2 dph%3D123456,,linearProvider%3DESPN2 dph%3D123456
+keepCust-dph-empty-value,,linearProvider%3DESPN2 dph%3D,,linearProvider%3DESPN2 dph%3D
+keepCust-dph-excluded,,linearProvider%3DESPN2,,linearProvider%3DESPN2 <EXCLUDE>dph
+sportSeriesNameWithValid_woID,,linearProvider%3DESPN2 sportSeriesName%3DrandText metadata_woId%3D222222,,linearProvider%3DESPN2 sportSeriesName%3Dmotor_Get_Up_  metadata_woId%3D222222
+sportSeriesNameWithInvalid_woID,,linearProvider%3DESPN2 sportSeriesName%3DrandText metadata_woId%3Dinvalidwoid,,linearProvider%3DESPN2 sportSeriesName%3DrandText metadata_woId%3Dinvalidwoid
+keepCust-sportSeriesName-value,,linearProvider%3DESPN2 sportSeriesName%3Dfootball,,linearProvider%3DESPN2 sportSeriesName%3Dfootball
+keepCust-sportSeriesName-cap-value,,linearProvider%3DESPN2 sportSeriesName%3DFOOTBALL,,linearProvider%3DESPN2 sportSeriesName%3DFOOTBALL
+keepCust-sportSeriesName-num-value,,linearProvider%3DESPN2 sportSeriesName%3D123456,,linearProvider%3DESPN2 sportSeriesName%3D123456
+keepCust-sportSeriesName-empty-value,,linearProvider%3DESPN2 sportSeriesName%3D,,linearProvider%3DESPN2 sportSeriesName%3D
+keepCust-sportSeriesName-excluded,,linearProvider%3DESPN2,,linearProvider%3DESPN2 <EXCLUDE>sportSeriesName
+keepCust-metadata_live-value,,linearProvider%3DESPN2 metadata_live%3Dtrue,,linearProvider%3DESPN2 metadata_live%3Dtrue
+keepCust-metadata_live-cap-value,,linearProvider%3DESPN2 metadata_live%3DFALSE,,linearProvider%3DESPN2 metadata_live%3DFALSE
+keepCust-metadata_live-num-value,,linearProvider%3DESPN2 metadata_live%3D123456,,linearProvider%3DESPN2 metadata_live%3D123456
+keepCust-metadata_live-empty-value,,linearProvider%3DESPN2 metadata_live%3D,,linearProvider%3DESPN2 metadata_live%3D
+keepCust-metadata_live-excluded,,linearProvider%3DESPN2,,linearProvider%3DESPN2 <EXCLUDE>metadata_live
+keepCust-device_os-value,,linearProvider%3DESPN2 device_os%3Dtizen,,linearProvider%3DESPN2 device_os%3Dtizen
+keepCust-device_os-cap-value,,linearProvider%3DESPN2 device_os%3DTIZEN,,linearProvider%3DESPN2 device_os%3DTIZEN
+keepCust-device_os-num-value,,linearProvider%3DESPN2 device_os%3D123456,,linearProvider%3DESPN2 device_os%3D123456
+keepCust-device_os-empty-value,,linearProvider%3DESPN2 device_os%3D,,linearProvider%3DESPN2 device_os%3D
+keepCust-device_os-excluded,,linearProvider%3DESPN2,,linearProvider%3DESPN2 <EXCLUDE>device_os
+keepCust-device_type-value,,linearProvider%3DESPN2 device_type%3Dlaptop,,linearProvider%3DESPN2 device_type%3Dlaptop
+keepCust-device_type-cap-value,,linearProvider%3DESPN2 device_type%3DPHONE,,linearProvider%3DESPN2 device_type%3DPHONE
+keepCust-device_type-num-value,,linearProvider%3DESPN2 device_type%3D123456,,linearProvider%3DESPN2 device_type%3D123456
+keepCust-device_type-empty-value,,linearProvider%3DESPN2 device_type%3D,,linearProvider%3DESPN2 device_type%3D
+keepCust-device_type-excluded,,linearProvider%3DESPN2,,linearProvider%3DESPN2 <EXCLUDE>device_type
+keepCust-metadata_assetId-value,,linearProvider%3DESPN2 metadata_assetId%3Drandtext,,linearProvider%3DESPN2 metadata_assetId%3Drandtext
+keepCust-metadata_assetId-cap-value,,linearProvider%3DESPN2 metadata_assetId%3DRAND_VAL,,linearProvider%3DESPN2 metadata_assetId%3DRAND_VAL
+keepCust-metadata_assetId-num-value,,linearProvider%3DESPN2 metadata_assetId%3D123456,,linearProvider%3DESPN2 metadata_assetId%3D123456
+keepCust-metadata_assetId-empty-value,,linearProvider%3DESPN2 metadata_assetId%3D,,linearProvider%3DESPN2 metadata_assetId%3D
+keepCust-metadata_assetId-excluded,,linearProvider%3DESPN2,,linearProvider%3DESPN2 <EXCLUDE>metadata_assetId
+keepCust-metadata_contenttype-value,,linearProvider%3Despn1 metadata_contenttype%3Dvod,,linearProvider%3Despn1 metadata_contenttype%3Dvod
+keepCust-metadata_contenttype-cap-value,,linearProvider%3Despn1 metadata_contenttype%3DRAND_VAL,,linearProvider%3Despn1 metadata_contenttype%3DRAND_VAL
+keepCust-metadata_contenttype-num-value,,linearProvider%3Despn1 metadata_contenttype%3D123456,,linearProvider%3Despn1 metadata_contenttype%3D123456
+keepCust-metadata_contenttype-empty-value,,linearProvider%3Despn1 metadata_contenttype%3D,,linearProvider%3Despn1 metadata_contenttype%3D
+keepCust-metadata_contenttype-excluded,,linearProvider%3Despn1,,linearProvider%3Despn1 <EXCLUDE>metadata_contenttype
+keepCust-metadata_state-value,,linearProvider%3Despn1 metadata_state%3Dsydney,,linearProvider%3Despn1 metadata_state%3Dsydney
+keepCust-metadata_state-cap-value,,linearProvider%3Despn1 metadata_state%3DRAND_VAL,,linearProvider%3Despn1 metadata_state%3DRAND_VAL
+keepCust-metadata_state-num-value,,linearProvider%3Despn1 metadata_state%3D123456,,linearProvider%3Despn1 metadata_state%3D123456
+keepCust-metadata_state-empty-value,,linearProvider%3Despn1 metadata_state%3D,,linearProvider%3Despn1 metadata_state%3D
+keepCust-metadata_state-excluded,,linearProvider%3Despn1,,linearProvider%3Despn1 <EXCLUDE>metadata_state
+keepCust-metadata_suburb-value,,linearProvider%3Despn1 metadata_suburb%3Drand_val,,linearProvider%3Despn1 metadata_suburb%3Drand_val
+keepCust-metadata_suburb-cap-value,,linearProvider%3Despn1 metadata_suburb%3DRAND_VAL,,linearProvider%3Despn1 metadata_suburb%3DRAND_VAL
+keepCust-metadata_suburb-num-value,,linearProvider%3Despn1 metadata_suburb%3D123456,,linearProvider%3Despn1 metadata_suburb%3D123456
+keepCust-metadata_suburb-empty-value,,linearProvider%3Despn1 metadata_suburb%3D,,linearProvider%3Despn1 metadata_suburb%3D
+keepCust-metadata_suburb-excluded,,linearProvider%3Despn1,,linearProvider%3Despn1 <EXCLUDE>metadata_suburb
+keepCust-metadata_title-value,,linearProvider%3Despn1 metadata_title%3Drand_val,,linearProvider%3Despn1 metadata_title%3Drand_val
+keepCust-metadata_title-cap-value,,linearProvider%3Despn1 metadata_title%3DRAND_VAL,,linearProvider%3Despn1 metadata_title%3DRAND_VAL
+keepCust-metadata_title-num-value,,linearProvider%3Despn1 metadata_title%3D123456,,linearProvider%3Despn1 metadata_title%3D123456
+keepCust-metadata_title-empty-value,,linearProvider%3Despn1 metadata_title%3D,,linearProvider%3Despn1 metadata_title%3D
+keepCust-metadata_title-excluded,,linearProvider%3Despn1,,linearProvider%3Despn1 <EXCLUDE>metadata_title
+keepCust-metadata_woId-value,,linearProvider%3Despn1 metadata_woId%3Drand_val,,linearProvider%3Despn1 metadata_woId%3Drand_val
+keepCust-metadata_woId-cap-value,,linearProvider%3Despn1 metadata_woId%3DRAND_VAL,,linearProvider%3Despn1 metadata_woId%3DRAND_VAL
+keepCust-metadata_woId-num-value,,linearProvider%3Despn1 metadata_woId%3D123456,,linearProvider%3Despn1 metadata_woId%3D123456
+keepCust-metadata_woId-empty-value,,linearProvider%3Despn1 metadata_woId%3D,,linearProvider%3Despn1 metadata_woId%3D
+keepCust-metadata_woId-excluded,,linearProvider%3Despn1,,linearProvider%3Despn1 <EXCLUDE>metadata_woId
+deleteUrlCust-with-rand_val,ptpl=rand_val dph=rand_val chtag=FSA03 location=AUS bettingid=motor_8928 nofb=rand_val,linearProvider%3Despn1 userType%3Dpremium,<EXCLUDE>ptpl <EXCLUDE>dph <EXCLUDE>chtag <EXCLUDE>location <EXCLUDE>bettingid <EXCLUDE>nofb,<EXCLUDE>userType
+addUrl-vad_type-excluded,,linearProvider%3Despn2,vad_type=linear,,
+addUrl-vad_type-empty,vad_type=,linearProvider%3Despn2,vad_type=,,
+addUrl-vad_type-value,vad_type=rand_val,linearProvider%3Despn2,vad_type=rand_val,,
+addUrl-vad_type-value,vad_type=linear,linearProvider%3Despn2,vad_type=linear,,
+addUrl-vad_type-cap-value,vad_type=LINEAR,linearProvider%3Despn2,vad_type=LINEAR,,
+addUrl-pp-excluded,,linearProvider%3Despn2,pp=kayo-app,,
+addUrl-pp-empty,pp=,linearProvider%3Despn2,pp=,,
+addUrl-pp-value,pp=rand_val,linearProvider%3Despn2,pp=rand_val,,
+addUrl-pp-value,pp=kayo-app,linearProvider%3Despn2,pp=kayo-app,,
+addUrl-pp-cap-value,pp=KAYO-APP,linearProvider%3Despn2,pp=KAYO-APP,,
+addUrl-tfcd-excluded,,linearProvider%3Despn2,tfcd=0,,
+addUrl-tfcd-empty,tfcd=,linearProvider%3Despn2,tfcd=,,
+addUrl-tfcd-value,tfcd=rand_val,linearProvider%3Despn2,tfcd=rand_val,,
+addUrl-cmsid-excluded,,linearProvider%3Despn2,cmsid=2497009,,
+addUrl-cmsid-empty,cmsid=,linearProvider%3Despn2,cmsid=,,
+addUrl-cmsid-value,cmsid=rand_val,linearProvider%3Despn2,cmsid=rand_val,,
+addUrl-cmsid-num-value,cmsid=2.495342e06,linearProvider%3Despn2,cmsid=2.495342e06,,
+addUrl-vid-excluded,,linearProvider%3Despn2,vid=espnvod_default_asset,,
+addUrl-vid-empty,vid=,linearProvider%3Despn2,vid=,,
+addUrl-vid-value,vid=rand_val,linearProvider%3Despn2,vid=rand_val,,
+addUrl-vid-value,vid=vid_f2bb87b5-43ed-48fa-84ba-36911878c5a3l,linearProvider%3Despn2,vid=vid_f2bb87b5-43ed-48fa-84ba-36911878c5a3l,,
+addUrl-ssss-excluded,,linearProvider%3Despn2,ssss=mediatailor,,
+addUrl-ssss-empty,ssss=,linearProvider%3Despn2,ssss=,,
+addUrl-ssss-value,ssss=rand_val,linearProvider%3Despn2,ssss=rand_val,,
+addUrl-ssss-cap-value,ssss=MEDIATAILOR,linearProvider%3Despn2,ssss=MEDIATAILOR,,
+addUrl-min_ad_duration-excluded,,linearProvider%3Despn2,min_ad_duration=1,,
+addUrl-min_ad_duration-empty,min_ad_duration=,linearProvider%3Despn2,min_ad_duration=,,
+addUrl-min_ad_duration-value,min_ad_duration=rand_val,linearProvider%3Despn2,min_ad_duration=rand_val,,
+addUrl-min_ad_duration-num-value,min_ad_duration=10,linearProvider%3Despn2,min_ad_duration=10,,
+addCust-chan-excluded,,linearProvider%3Despn2,,chan%3Dfoxtel
+addCust-chan-empty,,linearProvider%3Despn2 chan%3D,,chan%3D
+addCust-chan-value,,linearProvider%3Despn2 chan%3Drand_val,,chan%3Drand_val
+addCust-chan-num-value,,linearProvider%3Despn2 chan%3D123789,,chan%3D123789
+addCust-chan-cap-value,,linearProvider%3Despn2 chan%3DFOXTEL,,chan%3DFOXTEL
+addCust-chan-key-value-both-cap,,linearProvider%3Despn2 CHAN%3DFOXTEL,,chan%3Dfoxtel CHAN%3DFOXTEL
+addCust-authp-excluded,,linearProvider%3Despn2,,authp%3Dfoxtel
+addCust-authp-empty,,linearProvider%3Despn2 authp%3D,,authp%3D
+addCust-authp-value,,linearProvider%3Despn2 authp%3Drand_val,,authp%3Drand_val
+addCust-authp-num-value,,linearProvider%3Despn2 authp%3D123789,,authp%3D123789
+addCust-authp-cap-value,,linearProvider%3Despn2 authp%3DFOXTEL,,authp%3DFOXTEL
+addCust-authp-key-value-both-cap,,linearProvider%3Despn2 AUTHP%3DFOXTEL,,authp%3Dfoxtel AUTHP%3DFOXTEL
+addCust-refDomain-excluded,,linearProvider%3Despn2,,refDomain%3Dkayo.com.au
+addCust-refDomain-empty,,linearProvider%3Despn2 refDomain%3D,,refDomain%3D
+addCust-refDomain-value,,linearProvider%3Despn2 refDomain%3Drand_val,,refDomain%3Drand_val
+addCust-refDomain-num-value,,linearProvider%3Despn2 refDomain%3D123789,,refDomain%3D123789
+addCust-refDomain-cap-value,,linearProvider%3Despn2 refDomain%3DKAYO.COM.AU,,refDomain%3DKAYO.COM.AU
+addCust-refDomain-specialChar,,linearProvider%3Despn2 refDomain%3Dr%3At%2F1%3F2%23%5B3%5D4%405!6%2478%279(a)b*c%20d%2Ce%3Bfg%22h~I%5Ej%3Ck%3EL%20M%7Cn%5C0%60p.Qe6bfa3ae-4472-4aa5-b091-bdb325f37008,,refDomain%3Dr%3At%2F1%3F2%23%5B3%5D4%405!6%2478%279(a)b*c%20d%2Ce%3Bfg%22h~I%5Ej%3Ck%3EL%20M%7Cn%5C0%60p.Qe6bfa3ae-4472-4aa5-b091-bdb325f37008
+addCust-custPPID-excluded-with-url-ppid-value,ppid=url_rand_val,linearProvider%3Despn2,,ppid%3Durl_rand_val
+addCust-custPPID-and-url-ppid-excluded,,linearProvider%3Despn2,,<EXCLUDE>ppid
+addCust-custPPID-has_value-url-ppid-excluded,,linearProvider%3Despn2 ppid%3Dcust_val,,ppid%3Dcust_val
+addCust-custPPID-has_value-url-ppid-empty,ppid=,linearProvider%3Despn2 ppid%3Dcust_val,,ppid%3Dcust_val
+addCust-custPPID-and-url-ppid-both-empty,ppid=,linearProvider%3Despn2 ppid%3D,,ppid%3D
+addCust-custPPID-empty-url-ppid-excluded,,linearProvider%3Despn2 ppid%3D,,ppid%3D
+addCust-custPPID-excluded-url-ppid-empty,ppid=,linearProvider%3Despn2,,<EXCLUDE>ppid
+addCust-custBundleid-excluded-with-url-msid-value,msid=url_rand_val,linearProvider%3Despn1,msid=url_rand_val,bundleId%3Durl_rand_val
+addCust-Bundleid-and-url-msid-excluded,,linearProvider%3Despn2,,<EXCLUDE>bundleId
+addCust-Bundleid-has_value-url-msid-excluded,,linearProvider%3Despn2 bundleId%3Dcust_val,,bundleId%3Dcust_val
+addCust-Bundleid-has_value-url-msid-empty,msid=,linearProvider%3DEspn1 bundleId%3DcustBundleid,,bundleId%3DcustBundleid
+addCust-BundleidAndUrlMsidBothEmpty,msid=,linearProvider%3Despn1 bundleId%3D,,bundleId%3D
+addCust-custBundleid-empty-url-msid-excluded,,linearProvider%3Despn2 bundleId%3D,,bundleId%3D
+addCust-custBundleid-specialChar-value,,linearProvider%3Despn2 bundleId%3Dr%3At%2F1%3F2%23%5B3%5D4%405!6%2478%279(a)b*c%20d%2Ce%3Bfg%22h~I%5Ej%3Ck%3EL%20M%7Cn%5C0%60p.Qe6bfa3ae-4472-4aa5-b091-bdb325f37008,,bundleId%3Dr%3At%2F1%3F2%23%5B3%5D4%405!6%2478%279(a)b*c%20d%2Ce%3Bfg%22h~I%5Ej%3Ck%3EL%20M%7Cn%5C0%60p.Qe6bfa3ae-4472-4aa5-b091-bdb325f37008
+addCust-custBundleid-cap-value,,linearProvider%3Despn2 bundleId%3DRAND_VAL,,bundleId%3DRAND_VAL
+addCust-custBundleid-num-value,,linearProvider%3Despn2 bundleId%3D12345,,bundleId%3D12345
